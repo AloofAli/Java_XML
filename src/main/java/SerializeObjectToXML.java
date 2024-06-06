@@ -5,7 +5,7 @@ import java.io.File; // Import File for handling file operations
 
 public class SerializeObjectToXML {
     public static void main(String[] args) {
-        // Create a new instance of Father with name "Saddam" and age 30
+        
         Father obj = new Father("Ali Alavi", 30);
 
         try {
@@ -19,10 +19,10 @@ public class SerializeObjectToXML {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
             // Use the Marshaller to convert the obj instance to XML and write it to a file named "father.xml"
-            marshaller.marshal(obj, new File("myobject.xml"));
+            marshaller.marshal(obj, new File("father.xml"));
 
             // Output that serialization has been completed
-            System.out.println("Object has been serialized to myobject.xml");
+            System.out.println("Object has been serialized to father.xml");
         } catch (JAXBException e) {
             // Handle any JAXB exceptions that occur during marshalling
             e.printStackTrace();
