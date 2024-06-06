@@ -6,7 +6,7 @@ import java.io.File; // Import File for handling file operations
 public class SerializeObjectToXML {
     public static void main(String[] args) {
         // Create a new instance of Father with name "Saddam" and age 30
-        Father obj = new Father("Saddam hussein", 30);
+        Father obj = new Father("Ali Alavi", 30);
 
         try {
             // Create a new JAXBContext instance for the Father class
