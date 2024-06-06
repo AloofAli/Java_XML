@@ -35,6 +35,9 @@ dependencies {
 If you're not using a build tool like Maven or Gradle, you can manually download the required JAR files and add them to your project’s classpath:
 
 jaxb-api-2.3.1.jar
+
 jaxb-core-2.3.0.1.jar
+
 jaxb-impl-2.3.3.jar
+
 activation-1.1.1.jar
