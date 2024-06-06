@@ -4,7 +4,7 @@ import java.io.Serial; // Import Serial for the serialVersionUID annotation (Jav
 import java.io.Serializable; // Import Serializable for enabling object serialization
 
 @XmlRootElement // This annotation indicates that this class can be the root element of an XML document
-public class MyObject implements Serializable {
+public class Father implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L; // Unique identifier for serialization
 
@@ -14,10 +14,10 @@ public class MyObject implements Serializable {
     public Child child = new Child(); // Child object to be serialized and deserialized
 
     // Default no-argument constructor
-    public MyObject() {}
+    public Father() {}
 
-    // Constructor to initialize MyObject with name and age
-    public MyObject(String name, int age) {
+    // Constructor to initialize Father with name and age
+    public Father(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -42,6 +42,6 @@ public class MyObject implements Serializable {
 
     @Override
     public String toString() {
-        return "MyObject{name='" + name + "', age=" + age + '}'; // Override toString() to provide a string representation of MyObject
+        return "Father{name='" + name + "', age=" + age + '}'; // Override toString() to provide a string representation of Father
     }
 }
